@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalles</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- Encabezado -->
+  <ion-card *ngIf="producto">
+    <img [src]="Producto.imagen" alt="Imagen del producto">
+    <ion-card-header>
+      <ion-card-title>{{ Producto.nombre }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{ producto.descripcion }}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
